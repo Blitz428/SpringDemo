@@ -9,12 +9,12 @@
   "dateUpdated": null,
   "url": ""
 
-},
+  },
 {
   "id": null,
   "title": "My fourth post",
   "desc": "post",
-  "status": "IDEA",
+  "status": "COMPLETED",
   "contentType": "ARTICLE",
   "dateCreated": "2024-02-21T15:12:19.5736306",
   "dateUpdated": null,
@@ -25,7 +25,7 @@
     "id": null,
     "title": "My fifth post",
     "desc": "post",
-    "status": "IDEA",
+    "status": "PUBLISHED",
     "contentType": "ARTICLE",
     "dateCreated": "2024-02-21T15:12:19.5736306",
     "dateUpdated": null,

@@ -6,5 +6,6 @@ CREATE TABLE IF NOT EXISTS Content(
     content_type varchar(50) not null,
     date_created timestamp not null,
     date_updated timestamp,
-    url varchar(255)
+    url varchar(255),
+    progress decimal default 0.0
 );

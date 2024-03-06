@@ -17,7 +17,7 @@ public class HelloController {
         this.properties = properties;
     }
 
-    @GetMapping("/")
+    @GetMapping("/hello")
     public ContentCalendarProperties home(){
         return properties;
     }
