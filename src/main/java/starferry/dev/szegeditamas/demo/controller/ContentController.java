@@ -2,23 +2,22 @@ package starferry.dev.szegeditamas.demo.controller;
 
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import starferry.dev.szegeditamas.demo.model.Content;
-import starferry.dev.szegeditamas.demo.repository.ContentCollectionRepository;
+import starferry.dev.szegeditamas.demo.model.Status;
+import starferry.dev.szegeditamas.demo.repository.ContentRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/content")
 @CrossOrigin()
 public class ContentController {
 
-    private final ContentCollectionRepository repository;
+    private final ContentRepository repository;
 
-    public ContentController(ContentCollectionRepository repository) {
+    public ContentController(ContentRepository repository) {
         this.repository=repository;
     }
 
@@ -53,6 +52,16 @@ public class ContentController {
         if(!repository.existsById(id)){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-        repository.delete(id);
+        repository.deleteById(id);
+    }
+
+    @GetMapping("/filter/{keyword}")
+    public List<Content> findByTitle(@PathVariable String keyword){
+        return repository.findAllByTitleContains(keyword);
+    }
+
+    @GetMapping("/filter/status/{status}")
+    public List<Content> findByStatus(@PathVariable Status status){
+        return repository.listByStatus(status);
     }
 }

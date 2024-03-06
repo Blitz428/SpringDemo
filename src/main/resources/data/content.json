@@ -1,0 +1,35 @@
+[
+  {
+  "id": null,
+  "title": "My third post",
+  "desc": "post",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2024-02-21T15:12:19.5736306",
+  "dateUpdated": null,
+  "url": ""
+
+},
+{
+  "id": null,
+  "title": "My fourth post",
+  "desc": "post",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2024-02-21T15:12:19.5736306",
+  "dateUpdated": null,
+  "url": ""
+
+},
+  {
+    "id": null,
+    "title": "My fifth post",
+    "desc": "post",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2024-02-21T15:12:19.5736306",
+    "dateUpdated": null,
+    "url": ""
+
+  }
+]
