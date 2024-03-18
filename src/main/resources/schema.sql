@@ -7,5 +7,6 @@ CREATE TABLE IF NOT EXISTS Content(
     date_created timestamp not null,
     date_updated timestamp,
     url varchar(255),
-    progress decimal default 0.0
+    progress decimal,
+    deadline timestamp
 );

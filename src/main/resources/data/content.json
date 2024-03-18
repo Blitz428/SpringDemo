@@ -7,8 +7,8 @@
   "contentType": "ARTICLE",
   "dateCreated": "2024-02-21T15:12:19.5736306",
   "dateUpdated": null,
-  "url": ""
-
+  "url": "",
+  "deadline": "2024-03-01T00:00:00"
   },
 {
   "id": null,
@@ -18,7 +18,8 @@
   "contentType": "ARTICLE",
   "dateCreated": "2024-02-21T15:12:19.5736306",
   "dateUpdated": null,
-  "url": ""
+  "url": "",
+  "deadline": "2024-01-08T00:00:00"
 
 },
   {
@@ -29,7 +30,7 @@
     "contentType": "ARTICLE",
     "dateCreated": "2024-02-21T15:12:19.5736306",
     "dateUpdated": null,
-    "url": ""
-
+    "url": "",
+    "deadline": "2024-01-28T00:00:00"
   }
 ]

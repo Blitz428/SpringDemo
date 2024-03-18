@@ -6,12 +6,15 @@ import jakarta.validation.constraints.NotEmpty;
 import org.apache.logging.log4j.message.StringFormattedMessage;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.bind.DefaultValue;
+import org.springframework.cglib.core.Local;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
-
 import java.io.ObjectInputFilter;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public record Content(@Id
                         Integer id,
                       @NotBlank
@@ -30,7 +33,9 @@ public record Content(@Id
                       @Column(value = "url")
                       String url,
                       @Column(value = "progress")
-                      Double progress
+                      Double progress,
+                      @Column(value = "deadline")
+                      LocalDateTime deadline
 
 ) {
     public Content {
@@ -40,5 +45,11 @@ public record Content(@Id
         {
             progress=0.0;
         }
+        dateCreated = LocalDateTime.now();
+
+
     }
 }
+
+
+
